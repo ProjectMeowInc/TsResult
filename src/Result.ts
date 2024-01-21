@@ -9,7 +9,7 @@ export class Result<TResult, TError> {
 
     unwrap(): TResult {
         if (!this.value) {
-            throw new Error("Значение не может быть пусто")
+            throw new Error("The value cannot be empty")
         }
 
         return this.value
@@ -21,7 +21,7 @@ export class Result<TResult, TError> {
 
     getError(): TError {
         if (!this.error) {
-            throw new Error("Ошибка не может быть пуста")
+            throw new Error("The error cannot be empty")
         }
 
         return this.error

@@ -11,7 +11,7 @@ export class EmptyResult<TError> {
 
     getError(): TError {
         if (!this.error) {
-            throw new Error("Ошибка не может быть пуста")
+            throw new Error("The error cannot be empty")
         }
 
         return this.error
